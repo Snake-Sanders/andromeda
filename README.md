@@ -16,3 +16,14 @@ Ready to run in production? Please [check our deployment guides](https://hexdocs
   * Docs: https://hexdocs.pm/phoenix
   * Forum: https://elixirforum.com/c/phoenix-forum
   * Source: https://github.com/phoenixframework/phoenix
+
+## Resources
+
+- Favicon generator: 
+https://favicon.io/
+
+- PNG tool: 
+https://onlinepngtools.com/
+
+- Hosting: 
+https://fly.io/
