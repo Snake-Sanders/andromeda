@@ -21,7 +21,7 @@ defmodule AndromedaWeb.PageHTML do
     <div>
       <h1 class=" mt-10 flex items-center text-sm  leading-6">
         <p>
-          Page build with
+          This page was built with
           <spam class="text-brand font-semibold">
             Phoenix Framework
             <small class="bg-brand/5 text-[0.8125rem] ml-2 rounded-full px-2 font-medium leading-6">
