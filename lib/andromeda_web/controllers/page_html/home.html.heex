@@ -1,12 +1,12 @@
 <.flash_group flash={@flash} />
-<div class="flex flex-col lg:flex-row h-screen">
-  <div class="w-full lg:w-1/2 h-full">
+<div class="flex flex-col lg:flex-row min-h-screen">
+  <div id="banner" class="w-full lg:w-1/2 h-[50vh] lg:h-screen">
     <.galaxy_bg />
   </div>
 
-  <div class="w-full lg:w-1/2 h-full">
-    <div class="px-4 py-10 sm:px-6 sm:py-28 lg:px-8 xl:px-28 xl:py-32">
-      <div class="mx-auto max-w-xl lg:mx-0">
+  <div id="main-content" class="w-full lg:w-1/2 flex-1">
+    <div class="h-full pt-4 md:pt-6 px-4 sm:px-6 lg:px-8 xl:px-28 ">
+      <div class="mx-auto max-w-lg lg:mx-0">
         <header class="text-center py-4"></header>
 
         <section class="card italic p-4">
@@ -19,7 +19,7 @@
           <p>Hi there!</p>
           <p>
             My name is [Your Name].
-            I’m a software developer specializing in embedded systems and the interconnection of IoT devices for smart cities—magic to some, but really just low-level programming and real-time data processing. I also build dashboards with Phoenix LiveView to visualize and optimize these connected systems.
+            I'm a software developer specializing in embedded systems and the interconnection of IoT devices for smart cities—magic to some, but really just low-level programming and real-time data processing. I also build dashboards with Phoenix LiveView to visualize and optimize these connected systems.
           </p>
         </section>
 
