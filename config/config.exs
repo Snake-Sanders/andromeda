@@ -8,7 +8,7 @@
 import Config
 
 config :andromeda,
-  ecto_repos: [Andromeda.Repo],
+  # ecto_repos: [Andromeda.Repo],  # Uncomment to enable database
   generators: [timestamp_type: :utc_datetime]
 
 # Configures the endpoint

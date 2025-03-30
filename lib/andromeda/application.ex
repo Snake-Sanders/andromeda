@@ -9,7 +9,7 @@ defmodule Andromeda.Application do
   def start(_type, _args) do
     children = [
       AndromedaWeb.Telemetry,
-      Andromeda.Repo,
+      # Andromeda.Repo,  # Uncomment to enable database
       {DNSCluster, query: Application.get_env(:andromeda, :dns_cluster_query) || :ignore},
       {Phoenix.PubSub, name: Andromeda.PubSub},
       # Start the Finch HTTP client for sending emails
