@@ -4,20 +4,21 @@
     <.galaxy_bg />
   </div>
 
-  <div id="main-content" class="w-full lg:w-1/2 flex-1">
-    <div class="h-full pt-4 md:pt-6 px-4 sm:px-6 lg:px-8 xl:px-28 ">
-      <div class="mx-auto max-w-lg lg:mx-0">
+  <div id="main-content" class="w-full lg:w-1/2 flex-1 mx-auto max-w-lg px-2 md:px-0">
+    <div class="flex flex-col justify-between h-full pt-4 md:pt-6 ">
+      <div id="article" class="flex flex-col gap-3 mx-auto ">
         <header class="text-center py-4"></header>
 
-        <section class="card italic p-4">
-          <div class="text-sm md:text-lg">
+        <section class="italic">
+          <div class="text-sm md:text-md">
             "Any sufficiently advanced technology is indistinguishable from magic."
           </div>
           <div class="mt-2 text-xs md:text-sm text-right">— Arthur C. Clarke</div>
         </section>
-        <section class="mt-8 text-subtitle">
+
+        <section class="">
           <p>Hi there!</p>
-          <p class="mt-2 text-justify">
+          <p class="mt-2 md:text-justify">
             My name is Mariano.
             I'm a software developer specializing in embedded systems and the
             interconnection of IoT devices for smart cities,
@@ -25,11 +26,10 @@
             but really just low-level programming and real-time data processing. I also build dashboards with Phoenix LiveView to visualize and optimize these connected systems.
           </p>
         </section>
-
-        <footer class="text-center py-8 mt-16">
-          <.tooling_version />
-        </footer>
       </div>
+      <footer class="mt-8 py-4 ">
+        <.tooling_version />
+      </footer>
     </div>
   </div>
 </div>
