@@ -1,25 +1,35 @@
 <.flash_group flash={@flash} />
-<div class="flex flex-col lg:flex-row h-screen">
-  <div class="w-full lg:w-1/2 h-full">
+<div class="flex flex-col lg:flex-row min-h-screen">
+  <div id="banner" class="w-full lg:w-1/2 h-[50vh] lg:h-screen">
     <.galaxy_bg />
   </div>
 
-  <div class="w-full lg:w-1/2 h-full">
-    <div class="px-4 py-10 sm:px-6 sm:py-28 lg:px-8 xl:px-28 xl:py-32">
-      <div class="mx-auto max-w-xl lg:mx-0">
+  <div id="main-content" class="w-full lg:w-1/2 flex-1 mx-auto max-w-lg px-2 md:px-0">
+    <div class="flex flex-col justify-between h-full pt-4 md:pt-6 ">
+      <div id="article" class="flex flex-col gap-3 mx-auto ">
         <header class="text-center py-4"></header>
 
-        <section class="italic text-center py-4 gap-3">
-          <p class="text-lg">
+        <section class="italic">
+          <div class="text-sm md:text-md">
             "Any sufficiently advanced technology is indistinguishable from magic."
-          </p>
-          <p class="text-sm text-right">Arthur C. Clarke</p>
+          </div>
+          <div class="mt-2 text-xs md:text-sm text-right">— Arthur C. Clarke</div>
         </section>
 
-        <footer class="text-center py-8 mt-16">
-          <.tooling_version />
-        </footer>
+        <section class="">
+          <p>Hi there!</p>
+          <p class="mt-2 md:text-justify">
+            My name is Mariano.
+            I'm a software developer specializing in embedded systems and the
+            interconnection of IoT devices for smart cities,
+            which to some may seem like <strong>magic</strong>,
+            but really just low-level programming and real-time data processing. I also build dashboards with Phoenix LiveView to visualize and optimize these connected systems.
+          </p>
+        </section>
       </div>
+      <footer class="mt-8 py-4 ">
+        <.tooling_version />
+      </footer>
     </div>
   </div>
 </div>

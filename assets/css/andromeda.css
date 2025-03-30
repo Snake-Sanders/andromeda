@@ -1,13 +1,5 @@
 /* Custom Andromeda styles - no need for Tailwind directives here as they're already in app.css */
 
-:root {
-  --color-background: #1A202C; /* Dark space background */
-  --color-primary: #B794F4; /* Soft violet for main text */
-  --color-header: #805AD5; /* Bold violet for headers */
-  --color-subtitle: #ED8936; /* Warm orange for subtitles */
-  --color-accent: #38B2AC; /* Bright turquoise for accents */
-}
-
 /* Font classes for different weights */
 .sono {
   font-family: "Sono", monospace;
@@ -41,7 +33,7 @@
 }
 
 body {
-  @apply bg-[--color-background] text-[--color-primary];
+  @apply bg-background text-primary;
 }
 
 h1 {
@@ -49,21 +41,25 @@ h1 {
 }
 
 h2, h3 {
-  @apply text-[--color-header];
+  @apply text-header;
 }
 
 h4, h5, h6 {
-  @apply text-[--color-subtitle];
+  @apply text-subtitle;
 }
 
 a, button {
-  @apply text-[--color-accent] hover:underline;
+  @apply text-accent hover:underline;
+}
+
+section {
+  @apply p-4 mt-8 text-sm md:text-base;
 }
 
 .card {
-  @apply bg-[--color-background] border border-[--color-accent] rounded-lg shadow-lg p-4;
+  @apply bg-background border border-accent rounded-lg shadow-lg p-4;
 }
 
 .btn {
-  @apply bg-[--color-accent] text-white py-2 px-4 rounded hover:bg-opacity-80 transition;
+  @apply bg-accent text-white py-2 px-4 rounded hover:bg-opacity-80 transition;
 }

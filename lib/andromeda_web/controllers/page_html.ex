@@ -10,8 +10,19 @@ defmodule AndromedaWeb.PageHTML do
 
   def galaxy_bg(assigns) do
     ~H"""
-    <div class="bg-[url(/images/andromeda-bg.webp)] bg-cover bg-center h-full w-full">
-      <div class="flex items-center justify-center h-full text-white text-4xl font-bold"></div>
+    <div class="relative bg-[url(/images/andromeda-bg.webp)] bg-cover bg-center h-full w-full">
+      <div
+        id="right-gradient"
+        class="absolute right-0 w-1/6 h-full bg-gradient-to-r from-transparent to-background"
+      >
+      </div>
+      <div
+        id="bottom-gradient"
+        class="absolute bottom-0 w-full h-1/6 lg:h-2/6 bg-gradient-to-b from-transparent to-background"
+      >
+      </div>
+      <div class="flex items-center justify-center h-full text-white text-4xl font-bold relative z-10">
+      </div>
     </div>
     """
   end
@@ -19,17 +30,17 @@ defmodule AndromedaWeb.PageHTML do
   def tooling_version(assigns) do
     ~H"""
     <div>
-      <h1 class=" mt-10 flex items-center text-sm  leading-6">
+      <section class="flex text-xs text-center text-light font-slim ">
         <p>
           This page was built with
-          <spam class="text-brand font-semibold">
+          <spam class="">
             Phoenix Framework
-            <small class="bg-brand/5 text-[0.8125rem] ml-2 rounded-full px-2 font-medium leading-6">
+            <small class="font-semibold text-sm rounded-full font-grey-100 bg-primary/25 px-2 font-medium">
               v{Application.spec(:phoenix, :vsn)}
             </small>
           </spam>
         </p>
-      </h1>
+      </section>
     </div>
     """
   end
