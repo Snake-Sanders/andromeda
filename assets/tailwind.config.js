@@ -19,6 +19,7 @@ module.exports = {
         header: "#805AD5",      /* Bold violet for headers */
         subtitle: "#ED8936",    /* Warm orange for subtitles */
         accent: "#38B2AC",      /* Bright turquoise for accents */
+        light: "#CAD5E2"        /* Bright gray slate 300 */
       },
       fontFamily: {
         sono: ['"Sono"', 'monospace'],

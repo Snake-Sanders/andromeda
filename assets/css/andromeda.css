@@ -52,6 +52,10 @@ a, button {
   @apply text-accent hover:underline;
 }
 
+section {
+  @apply p-4 mt-8 text-sm md:text-base;
+}
+
 .card {
   @apply bg-background border border-accent rounded-lg shadow-lg p-4;
 }
