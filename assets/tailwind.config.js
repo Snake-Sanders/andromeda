@@ -14,7 +14,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        brand: "#FD4F00",
+        background: "#1A202C",  /* Dark space background */
+        primary: "#B794F4",     /* Soft violet for main text */
+        header: "#805AD5",      /* Bold violet for headers */
+        subtitle: "#ED8936",    /* Warm orange for subtitles */
+        accent: "#38B2AC",      /* Bright turquoise for accents */
       },
       fontFamily: {
         sono: ['"Sono"', 'monospace'],

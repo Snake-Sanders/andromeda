@@ -22,9 +22,9 @@ defmodule AndromedaWeb.PageHTML do
       <h1 class=" mt-10 flex items-center text-sm  leading-6">
         <p>
           This page was built with
-          <spam class="text-brand font-semibold">
+          <spam class="">
             Phoenix Framework
-            <small class="bg-brand/5 text-[0.8125rem] ml-2 rounded-full px-2 font-medium leading-6">
+            <small class="font-semibold text-[0.8125rem] rounded-full px-2 font-medium leading-6">
               v{Application.spec(:phoenix, :vsn)}
             </small>
           </spam>
